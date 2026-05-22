@@ -1,0 +1,58 @@
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { margin: 0; padding: 0; height: 100%; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  background: #f1f5f9;
+  color: #111827;
+}
+button { font-family: inherit; }
+img, svg { display: inline-block; max-width: 100%; }
+
+/* ─── Responsive helpers ─────────────────────────────────────────────────────
+   The legacy screens use heavy inline styles. We layer media-query overrides
+   here using the wrapper classes the portal shells apply at runtime. */
+
+.vp-shell { min-height: 100vh; }
+
+/* Sidebar collapse on tablets/phones */
+@media (max-width: 900px) {
+  .vp-sidebar { display: none !important; }
+  .vp-sidebar.vp-sidebar-open {
+    display: flex !important;
+    position: fixed !important;
+    z-index: 50;
+    top: 0; left: 0; bottom: 0;
+    width: 260px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,.18);
+  }
+  .vp-sidebar-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,.4); z-index: 40;
+  }
+  .vp-mobile-only { display: inline-flex !important; }
+  .vp-desktop-only { display: none !important; }
+}
+@media (min-width: 901px) {
+  .vp-mobile-only { display: none !important; }
+  .vp-sidebar-backdrop { display: none !important; }
+}
+
+/* Horizontal scroll for wide tables on phones */
+@media (max-width: 700px) {
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+  .vp-card { padding: 16px !important; }
+  .vp-page { padding: 12px !important; }
+  .vp-grid-2, .vp-grid-3, .vp-grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+  .vp-topbar-title { display: none !important; }
+}
+
+/* Inputs/touch targets */
+input, select, textarea, button {
+  font-size: 16px; /* prevents iOS zoom */
+}
+
+/* Focus visibility */
+:focus-visible { outline: 2px solid #b91c1c; outline-offset: 2px; }
