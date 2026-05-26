@@ -1,0 +1,23 @@
+export const VE_BATCHES = [
+  { id:1, client:"Zenith Bank",    batch:"Feb 2026 Intake",    tasks:45, completed:"Feb 5", age:1, warning:false },
+  { id:2, client:"MTN Nigeria",    batch:"Tech Hiring Q1",     tasks:23, completed:"Feb 5", age:1, warning:false },
+  { id:3, client:"Dangote Group",  batch:"Graduate Program",   tasks:67, completed:"Feb 4", age:2, warning:false },
+  { id:4, client:"Access Bank",    batch:"Branch Staff",       tasks:34, completed:"Feb 4", age:2, warning:false },
+  { id:5, client:"Shell Nigeria",  batch:"Contractor Verify",  tasks:12, completed:"Feb 3", age:3, warning:false },
+  { id:6, client:"Chevron",        batch:"Field Ops Hire",     tasks:28, completed:"Feb 3", age:3, warning:false },
+  { id:7, client:"GTBank",         batch:"Management Trainee", tasks:56, completed:"Feb 2", age:4, warning:false },
+  { id:8, client:"Unilever",       batch:"Sales Team",         tasks:19, completed:"Feb 1", age:5, warning:true  },
+];
+
+export const VE_TASKS_BASE = [
+  { id:1,  candidate:"Ada Okonkwo",   service:"Employment Reference", outcome:"Verified",      evidence:3, status:"Review", vo:"Damilola Adeyemi", date:"Feb 5", mode:"EMAIL", employer:"Dangote Industries", title:"Senior Accountant", period:"Jan 2020 – Dec 2024", hrEmail:"hr@dangote.ng", extParty:"HR Dept", response:"Secure Link", voNotes:"HR confirmed employment dates and title. Departure was voluntary resignation per company records. No disciplinary issues noted." },
+  { id:2,  candidate:"Ada Okonkwo",   service:"Guarantor",            outcome:"Verified",      evidence:2, status:"Review", vo:"Damilola Adeyemi", date:"Feb 5", mode:"EMAIL", employer:"—", title:"—", period:"—", hrEmail:"—", extParty:"Guarantor", response:"Email", voNotes:"Guarantor confirmed relationship and information." },
+  { id:3,  candidate:"Ada Okonkwo",   service:"Address Verification", outcome:"Verified",      evidence:5, status:"Review", vo:"Tunde Fashola",    date:"Feb 5", mode:"FIELD", employer:"—", title:"—", period:"—", hrEmail:"—", extParty:"Neighbour",  response:"In-person", voNotes:"Address confirmed. Resident confirmed for 4+ years." },
+  { id:4,  candidate:"Chidi Nwosu",   service:"Employment Reference", outcome:"Discrepancy",   evidence:4, status:"Review", vo:"Damilola Adeyemi", date:"Feb 5", mode:"EMAIL", employer:"First Bank",         title:"Branch Manager",    period:"Jan 2020 – Dec 2024", hrEmail:"hr@firstbank.ng", extParty:"HR Dept", response:"Email", voNotes:"Employer says employment ended March 2024. Candidate claimed December 2024. 9-month discrepancy." },
+  { id:5,  candidate:"Chidi Nwosu",   service:"Guarantor",            outcome:"Verified",      evidence:2, status:"Review", vo:"Chinedu Okafor",   date:"Feb 5", mode:"EMAIL", employer:"—", title:"—", period:"—", hrEmail:"—", extParty:"Guarantor", response:"Email", voNotes:"Guarantor confirmed all details." },
+  { id:6,  candidate:"Chidi Nwosu",   service:"Address Verification", outcome:"Verified",      evidence:6, status:"Review", vo:"Tunde Fashola",    date:"Feb 4", mode:"FIELD", employer:"—", title:"—", period:"—", hrEmail:"—", extParty:"Landlord", response:"In-person", voNotes:"Landlord confirmed tenancy of 2 years." },
+  { id:7,  candidate:"Emeka Udo",     service:"Employment Reference", outcome:"Verified",      evidence:3, status:"Review", vo:"Ngozi Eze",        date:"Feb 5", mode:"EMAIL", employer:"UBA",                title:"IT Officer",        period:"Mar 2019 – Oct 2023", hrEmail:"hr@uba.ng",       extParty:"HR Dept", response:"Secure Link", voNotes:"Employment verified. Left voluntarily." },
+  { id:8,  candidate:"Emeka Udo",     service:"Guarantor",            outcome:"Not Verified",  evidence:2, status:"Review", vo:"Ngozi Eze",        date:"Feb 5", mode:"EMAIL", employer:"—", title:"—", period:"—", hrEmail:"—", extParty:"Guarantor", response:"No response", voNotes:"Guarantor unreachable after 3 attempts." },
+  { id:9,  candidate:"Fatima Sule",   service:"Employment Reference", outcome:"Verified",      evidence:4, status:"Review", vo:"Adebayo Fashola",  date:"Feb 4", mode:"PORTAL", employer:"Stanbic IBTC",     title:"Analyst",           period:"Jun 2021 – Aug 2024", hrEmail:"verify@stanbic.ng", extParty:"HR Portal", response:"Portal", voNotes:"HR portal confirmed all employment details." },
+  { id:10, candidate:"Fatima Sule",   service:"Address Verification", outcome:"Verified",      evidence:3, status:"Review", vo:"Tunde Fashola",    date:"Feb 4", mode:"FIELD", employer:"—", title:"—", response:"In-person", period:"—", hrEmail:"—", extParty:"Neighbour", voNotes:"Address confirmed by two neighbours." },
+];
