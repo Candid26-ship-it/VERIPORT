@@ -1,0 +1,76 @@
+export const COVERAGE_GAPS = [
+  { institution:"Ahmadu Bello University",   short:"ABU",    role:"HOD",              faculty:"Engineering",    dept:"Mechanical Engineering", gapType:"Vacant",  pendingTasks:8,  lastKnown:"—",                           instId:"abu",    lastActivity:"never"   },
+  { institution:"University of Benin",       short:"UNIBEN", role:"HOD",              faculty:"Science",        dept:"Biochemistry",           gapType:"Vacant",  pendingTasks:6,  lastKnown:"—",                           instId:"uniben", lastActivity:"never"   },
+  { institution:"Ahmadu Bello University",   short:"ABU",    role:"HOD",              faculty:"Science",        dept:"Microbiology",           gapType:"Vacant",  pendingTasks:5,  lastKnown:"—",                           instId:"abu",    lastActivity:"never"   },
+  { institution:"University of Lagos",       short:"UNILAG", role:"HOD",              faculty:"Medicine",       dept:"Medicine & Surgery",     gapType:"Vacated", pendingTasks:5,  lastKnown:"Prof. Kemi Adeola (vacated)",  instId:"unilag", lastActivity:"over180" },
+  { institution:"University of Benin",       short:"UNIBEN", role:"HOD",              faculty:"Engineering",    dept:"Chemical Engineering",   gapType:"Vacant",  pendingTasks:4,  lastKnown:"—",                           instId:"uniben", lastActivity:"never"   },
+  { institution:"Lagos State University",    short:"LASU",   role:"HOD",              faculty:"Social Science", dept:"Economics",              gapType:"Stale",   pendingTasks:4,  lastKnown:"Dr. Tunde Olawale (stale)",   instId:"lasu",   lastActivity:"90"      },
+  { institution:"Obafemi Awolowo University",short:"OAU",    role:"Registrar",        faculty:"—",              dept:"—",                      gapType:"Stale",   pendingTasks:3,  lastKnown:"registrar@oauife.edu.ng",     instId:"oau",    lastActivity:"90"      },
+  { institution:"University of Lagos",       short:"UNILAG", role:"Vice Chancellor",  faculty:"—",              dept:"—",                      gapType:"Vacant",  pendingTasks:3,  lastKnown:"—",                           instId:"unilag", lastActivity:"never"   },
+  { institution:"Federal Univ. of Tech.",    short:"FUTA",   role:"HOD",              faculty:"Engineering",    dept:"Computer Engineering",   gapType:"Vacant",  pendingTasks:2,  lastKnown:"—",                           instId:"futa",   lastActivity:"never"   },
+  { institution:"Moshood Abiola Polytechnic",short:"MAPOLY", role:"Deputy Registrar", faculty:"—",              dept:"—",                      gapType:"Vacated", pendingTasks:2,  lastKnown:"Mrs. Bisi Adeyemi (vacated)", instId:"mapoly", lastActivity:"over180" },
+  { institution:"Ahmadu Bello University",   short:"ABU",    role:"HOD",              faculty:"Arts",           dept:"History",                gapType:"Stale",   pendingTasks:1,  lastKnown:"Dr. Musa Garba (stale)",      instId:"abu",    lastActivity:"180"     },
+  { institution:"University of Ibadan",      short:"UI",     role:"HOD",              faculty:"Education",      dept:"Educational Psychology", gapType:"Vacant",  pendingTasks:1,  lastKnown:"—",                           instId:"ui",     lastActivity:"never"   },
+];
+
+export const VM_INSTITUTIONS = [
+  { id:"unilag", name:"University of Lagos",          short:"UNILAG", type:"University",   ownership:"Public",  state:"Lagos",  faculties:12, departments:68, vasOnFile:41, coverage:60, stale:4, vacant:8,  vacated:2, lastActivity:"30"    },
+  { id:"oau",    name:"Obafemi Awolowo University",   short:"OAU",    type:"University",   ownership:"Public",  state:"Osun",   faculties:9,  departments:52, vasOnFile:28, coverage:54, stale:6, vacant:9,  vacated:3, lastActivity:"30"    },
+  { id:"ui",     name:"University of Ibadan",         short:"UI",     type:"University",   ownership:"Public",  state:"Oyo",    faculties:13, departments:75, vasOnFile:52, coverage:69, stale:3, vacant:6,  vacated:1, lastActivity:"90"    },
+  { id:"uniben", name:"University of Benin",          short:"UNIBEN", type:"University",   ownership:"Public",  state:"Edo",    faculties:11, departments:60, vasOnFile:33, coverage:55, stale:5, vacant:10, vacated:2, lastActivity:"90"    },
+  { id:"abu",    name:"Ahmadu Bello University",      short:"ABU",    type:"University",   ownership:"Public",  state:"Kaduna", faculties:14, departments:80, vasOnFile:44, coverage:55, stale:7, vacant:12, vacated:4, lastActivity:"180"   },
+  { id:"lasu",   name:"Lagos State University",       short:"LASU",   type:"University",   ownership:"State",   state:"Lagos",  faculties:8,  departments:45, vasOnFile:22, coverage:49, stale:3, vacant:8,  vacated:1, lastActivity:"30"    },
+  { id:"futa",   name:"Federal Univ. of Tech., Akure",short:"FUTA",  type:"University",   ownership:"Federal", state:"Ondo",   faculties:7,  departments:38, vasOnFile:18, coverage:47, stale:4, vacant:6,  vacated:2, lastActivity:"over180"},
+  { id:"mapoly", name:"Moshood Abiola Polytechnic",   short:"MAPOLY", type:"Polytechnic",  ownership:"State",   state:"Ogun",   faculties:6,  departments:30, vasOnFile:12, coverage:40, stale:2, vacant:5,  vacated:1, lastActivity:"over180"},
+];
+
+export const VA_REGISTRY_DATA = {
+  unilag: {
+    instLevel: [
+      { role:"Registrar",        name:"Dr. Emeka Nwachukwu", email:"registrar@unilag.edu.ng",     phone:"+234-801-234-5678", source:"Direct",     lastConfirmed:"Feb 14, 2026", status:"Validated", onboardingStatus:"Onboarded",     evidencePointer:"Staff directory — registry.unilag.edu.ng"    },
+      { role:"Deputy Registrar", name:"Mrs. Shade Okafor",   email:"deputyreg@unilag.edu.ng",     phone:"+234-802-345-6789", source:"Direct",     lastConfirmed:"Jan 10, 2026", status:"Stale",     onboardingStatus:"Onboarded",     evidencePointer:"Staff directory — registry.unilag.edu.ng"    },
+      { role:"Dean of Students", name:"Prof. Jide Adekunle", email:"deanstudents@unilag.edu.ng",  phone:"+234-803-456-7890", source:"Direct",     lastConfirmed:"Feb 20, 2026", status:"Validated", onboardingStatus:"Onboarded",     evidencePointer:"Official appointment letter — Feb 2026"      },
+      { role:"Vice Chancellor",  name:"",                    email:"",                            phone:"",                  source:"",           lastConfirmed:"—",            status:"Vacant",    onboardingStatus:"Not Onboarded", evidencePointer:"—"                                           },
+    ],
+    deptLevel: [
+      { faculty:"Science",     dept:"Computer Science",       name:"Dr. Akpan Bassey",   email:"akpan@unilag.edu.ng",         phone:"+234-804-111-2222", source:"Direct",     lastConfirmed:"Feb 22, 2026", status:"Validated", onboardingStatus:"Onboarded",     evidencePointer:"Staff ID — FE campus visit Feb 2026"         },
+      { faculty:"Science",     dept:"Mathematics",            name:"Dr. Funke Adeyemi",  email:"funke.adeyemi@unilag.edu.ng", phone:"+234-804-222-3333", source:"Scholar",    lastConfirmed:"Jan 30, 2026", status:"Stale",     onboardingStatus:"Onboarded",     evidencePointer:"Scholar candidate submission — Jan 2026"     },
+      { faculty:"Science",     dept:"Physics",                name:"",                   email:"",                            phone:"",                  source:"",           lastConfirmed:"—",            status:"Vacant",    onboardingStatus:"Not Onboarded", evidencePointer:"—"                                           },
+      { faculty:"Engineering", dept:"Civil Engineering",      name:"Prof. Olu Babatunde",email:"olu.babatunde@unilag.edu.ng", phone:"+234-804-333-4444", source:"Direct",     lastConfirmed:"Feb 18, 2026", status:"Validated", onboardingStatus:"Onboarded",     evidencePointer:"Staff directory — engineering.unilag.edu.ng" },
+      { faculty:"Engineering", dept:"Electrical Engineering", name:"Dr. Ngozi Eze",      email:"ngozi.eze@unilag.edu.ng",     phone:"+234-804-444-5555", source:"FE-sourced", lastConfirmed:"Dec 10, 2025", status:"Stale",     onboardingStatus:"Onboarded",     evidencePointer:"FE campus visit — staff ID photo on file"    },
+      { faculty:"Engineering", dept:"Mechanical Engineering", name:"",                   email:"",                            phone:"",                  source:"",           lastConfirmed:"—",            status:"Vacant",    onboardingStatus:"Not Onboarded", evidencePointer:"—"                                           },
+      { faculty:"Law",         dept:"Public Law",             name:"Prof. Chidi Nnaji",  email:"chidi.nnaji@unilag.edu.ng",   phone:"+234-804-555-6666", source:"Direct",     lastConfirmed:"Feb 01, 2026", status:"Validated", onboardingStatus:"Onboarded",     evidencePointer:"Official appointment letter — Jan 2026"      },
+      { faculty:"Medicine",    dept:"Medicine & Surgery",     name:"Prof. Kemi Adeola",  email:"",                            phone:"+234-804-666-7777", source:"Direct",     lastConfirmed:"Jan 05, 2026", status:"Vacated",   onboardingStatus:"Suspended",     evidencePointer:"Staff ID on file — contact now inactive"     },
+    ],
+  },
+};
+
+export const defaultVAData = (inst) => ({
+  instLevel:[
+    { role:"Registrar",       name:`Registrar, ${inst.short}`, email:`registrar@${inst.short.toLowerCase()}.edu.ng`, phone:"",source:"Direct", lastConfirmed:"Jan 2026", status:"Validated", onboardingStatus:"Onboarded",     evidencePointer:"Staff directory" },
+    { role:"Deputy Registrar",name:"",email:"",phone:"",source:"",lastConfirmed:"—",status:"Vacant", onboardingStatus:"Not Onboarded", evidencePointer:"—" },
+    { role:"Dean of Students",name:"",email:"",phone:"",source:"",lastConfirmed:"—",status:"Vacant", onboardingStatus:"Not Onboarded", evidencePointer:"—" },
+    { role:"Vice Chancellor", name:"",email:"",phone:"",source:"",lastConfirmed:"—",status:"Vacant", onboardingStatus:"Not Onboarded", evidencePointer:"—" },
+  ],
+  deptLevel:[
+    { faculty:"Science",    dept:"Computer Science", name:`HOD CompSci, ${inst.short}`, email:`hod.cs@${inst.short.toLowerCase()}.edu.ng`, phone:"",source:"Direct", lastConfirmed:"Jan 2026", status:"Validated", onboardingStatus:"Onboarded",     evidencePointer:"Staff directory" },
+    { faculty:"Science",    dept:"Mathematics",      name:"",email:"",phone:"",source:"",lastConfirmed:"—",status:"Vacant", onboardingStatus:"Not Onboarded", evidencePointer:"—" },
+    { faculty:"Engineering",dept:"Civil Engineering",name:"",email:"",phone:"",source:"",lastConfirmed:"—",status:"Vacant", onboardingStatus:"Not Onboarded", evidencePointer:"—" },
+  ],
+});
+
+export const VM_ESCALATIONS = [
+  { id:1, type:"Discrepancy",  label:"Discrepancy",  item:"Chidi Nwosu - Employment",      escalatedBy:"Fatima (VE)", age:"2h",  candidate:"Chidi Nwosu",  service:"Employment Reference", veNotes:"Employer says employment ended March 2024. Candidate claimed December 2024. 9-month discrepancy. Client may want to discuss before we finalize the report.", employer:"First Bank", title:"Branch Manager", candidatePeriod:"Jan 2020–Dec 2024", hrPeriod:"Jan 2020–Mar 2024", outcome:"Discrepancy" },
+  { id:2, type:"Client Issue",  label:"Client Issue", item:"GTBank batch - complaint",      escalatedBy:"Sarah (CE)", age:"4h",  candidate:"GTBank Batch",  service:"—",                    veNotes:"Client raised concern about report format and missing addendum.",                                                                                          employer:"—", title:"—", candidatePeriod:"—", hrPeriod:"—", outcome:"Client Complaint" },
+  { id:3, type:"SLA Breach",   label:"SLA Breach",   item:"Shell batch - 3 tasks late",     escalatedBy:"System",     age:"2d",  candidate:"Shell Batch",   service:"Multiple",             veNotes:"3 tasks have exceeded SLA by >2 days. Auto-escalated for manager action.",                                                                               employer:"—", title:"—", candidatePeriod:"—", hrPeriod:"—", outcome:"SLA Breach" },
+  { id:4, type:"Fraud Suspect",label:"Fraud Suspect",item:"Emeka Udo - WAEC certificate",   escalatedBy:"Fatima (VE)", age:"3d",  candidate:"Emeka Udo",     service:"WAEC Verification",    veNotes:"WAEC certificate appears to have been altered. Serial number does not match official records.",                                                          employer:"WAEC", title:"—", candidatePeriod:"2003/2004", hrPeriod:"Not found", outcome:"Suspected Fraud" },
+];
+
+export const VM_EXPENSES = [
+  { id:1, agent:"Tunde Bakare",    task:"Ada Okonkwo - Address",    amount:12500, submitted:"Feb 5", location:"Ikeja, Lagos",     taskId:"#45221", taskOutcome:"Verified", evidenceCount:6, items:[{label:"Transportation",amt:5000,receipt:true},{label:"Site access fee",amt:3500,receipt:true},{label:"Neighbor attestation",amt:2000,receipt:true},{label:"Communication (calls)",amt:2000,receipt:false}], agentNotes:"Address was in gated estate, had to pay ₦3,500 to security for entry. Neighbor required small gift before agreeing to attestation." },
+  { id:2, agent:"Amina Yusuf",     task:"Chidi Nwosu - Address",    amount:8000,  submitted:"Feb 5", location:"Yaba, Lagos",       taskId:"#45198", taskOutcome:"Verified", evidenceCount:5, items:[{label:"Transportation",amt:4500,receipt:true},{label:"Communication",amt:2000,receipt:true},{label:"Printing",amt:1500,receipt:false}],                                                                          agentNotes:"Subject confirmed at address. Had to revisit twice as subject was not available first visit." },
+  { id:3, agent:"Chidi Nwankwo",   task:"Emeka Udo - Guarantor",    amount:6500,  submitted:"Feb 4", location:"Surulere, Lagos",   taskId:"#45210", taskOutcome:"Verified", evidenceCount:4, items:[{label:"Transportation",amt:4000,receipt:true},{label:"Communication",amt:2500,receipt:true}],                                                                                                                   agentNotes:"Guarantor confirmed all details in person." },
+  { id:4, agent:"Olu Adeyinka",    task:"Fatima Sule - Address",    amount:15000, submitted:"Feb 4", location:"Victoria Island",   taskId:"#45215", taskOutcome:"Verified", evidenceCount:7, items:[{label:"Transportation",amt:8000,receipt:true},{label:"Site access fee",amt:5000,receipt:true},{label:"Communication",amt:2000,receipt:false}],                                                                    agentNotes:"VI address required vehicle access fee for estate." },
+  { id:5, agent:"Blessing Okafor", task:"Helen Obi - Employment",   amount:9500,  submitted:"Feb 3", location:"Apapa, Lagos",      taskId:"#45188", taskOutcome:"Verified", evidenceCount:3, items:[{label:"Transportation",amt:7000,receipt:true},{label:"Communication",amt:2500,receipt:false}],                                                                                                                   agentNotes:"Employer located in port area, high transportation cost." },
+  { id:6, agent:"Tunde Bakare",    task:"Janet Musa - Address",     amount:7000,  submitted:"Feb 3", location:"Gbagada, Lagos",    taskId:"#45179", taskOutcome:"Verified", evidenceCount:4, items:[{label:"Transportation",amt:5000,receipt:true},{label:"Communication",amt:2000,receipt:false}],                                                                                                                   agentNotes:"Standard address verification." },
+];

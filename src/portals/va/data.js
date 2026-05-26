@@ -1,0 +1,17 @@
+export const VA_STUDENTS = [
+  { id:1, name:"Blessing Okoro",  matric:"180305123", level:300, session:"2025/2026", status:"Pending" },
+  { id:2, name:"Chidi Nnamdi",    matric:"190207456", level:200, session:"2025/2026", status:"Pending" },
+  { id:3, name:"Grace Adebayo",   matric:"170108789", level:400, session:"2025/2026", status:"Pending" },
+  { id:4, name:"Emeka Okonkwo",   matric:"200401234", level:100, session:"2025/2026", status:"Done"    },
+  { id:5, name:"Fatima Ibrahim",  matric:"210502345", level:100, session:"2025/2026", status:"Pending" },
+  { id:6, name:"Adaeze Eze",      matric:"200301122", level:300, session:"2025/2026", status:"Pending" },
+  { id:7, name:"Tunde Afolabi",   matric:"190405678", level:200, session:"2025/2026", status:"Pending" },
+  { id:8, name:"Ngozi Obi",       matric:"180607890", level:400, session:"2025/2026", status:"Pending" },
+  { id:9, name:"Usman Bello",     matric:"210102233", level:100, session:"2025/2026", status:"Pending" },
+  { id:10,name:"Chisom Ike",      matric:"170809456", level:500, session:"2025/2026", status:"Pending" },
+  { id:11,name:"Oluwaseun Adeyemi",matric:"180102567",level:300, session:"2025/2026", status:"Pending" },
+  { id:12,name:"Kelechi Okafor",  matric:"190204678", level:200, session:"2025/2026", status:"Pending" },
+  { id:13,name:"Hauwa Musa",      matric:"200305789", level:100, session:"2025/2026", status:"Pending" },
+  { id:14,name:"Ifeanyi Nwosu",   matric:"170406890", level:400, session:"2025/2026", status:"Pending" },
+  { id:15,name:"Sola Taiwo",      matric:"210507901", level:200, session:"2025/2026", status:"Pending" },
+];
