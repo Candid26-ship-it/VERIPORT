@@ -1,3 +1,5 @@
+import { RoleSwitcher } from "../../../components/RoleSwitcher.jsx";
+
 export default function CandidateTopbar({demoScreen, setDemoScreen, activeProfile, onSwitchProfile}) {
   return (
     <div style={{background:"#1e3a5f",padding:"12px 20px",display:"flex",alignItems:"center",justifyContent:"space-between",flexShrink:0}}>
